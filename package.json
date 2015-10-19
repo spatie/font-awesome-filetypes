@@ -1,0 +1,32 @@
+{
+  "name": "font-awesome-filetypes",
+  "version": "0.1.0",
+  "description": "Helper to retrieve the Font Awesome icon for a specific file extension",
+  "main": "dist/index.js",
+  "scripts": {
+    "compile": "babel src -d lib",
+    "prepublish": "npm run compile",
+    "test": "mocha --compilers js:mocha-babel test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spatie-custom/font-awesome-filetypes.git"
+  },
+  "keywords": [
+    "fontawesome",
+    "files",
+    "extensions"
+  ],
+  "author": "Sebastian De Deyne",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spatie-custom/font-awesome-filetypes/issues"
+  },
+  "homepage": "https://github.com/spatie-custom/font-awesome-filetypes#readme",
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babel-runtime": "^5.8.25",
+    "mocha": "^2.3.3",
+    "mocha-babel": "^3.0.0"
+  }
+}
