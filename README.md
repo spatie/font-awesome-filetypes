@@ -21,6 +21,8 @@ let filename = foobar.jpg
 let extension = foobar.split('.').pop()
 
 let icon = `<i class="fa ${getIconForExtension(extension)}"></i>`
+
+// => <i class="fa fa-file-image-o"></i>
 ```
 
 ## Testing
