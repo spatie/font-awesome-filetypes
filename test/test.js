@@ -16,7 +16,7 @@ describe('icons', () => {
 describe('get_icon_for_extension', () => {
     
     it('returns_a_default_file_icon', () => {
-      assert.equal('fa-file-o', getIconForExtension('randomExtension'))
+        assert.equal('fa-file-o', getIconForExtension('randomExtension'))
     })
 
     it('can_handle_random_cases', () => {

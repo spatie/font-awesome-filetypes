@@ -4,9 +4,11 @@
   "description": "Helper to retrieve the Font Awesome icon for a specific file extension",
   "main": "lib/index.js",
   "scripts": {
-    "compile": "babel src -d lib",
-    "prepublish": "npm run compile",
-    "test": "mocha --compilers js:mocha-babel test"
+    "compile": "node_modules/.bin/babel src -d lib",
+    "lint": "node_modules/.bin/eslint .",
+    "test:unit": "mocha --compilers js:mocha-babel test",
+    "test": "npm run lint && npm run test:unit",
+    "prepublish": "npm run compile"
   },
   "repository": {
     "type": "git",
@@ -26,6 +28,7 @@
   "devDependencies": {
     "babel": "^5.8.23",
     "babel-runtime": "^5.8.25",
+    "eslint": "^1.7.2",
     "mocha": "^2.3.3",
     "mocha-babel": "^3.0.0"
   }
