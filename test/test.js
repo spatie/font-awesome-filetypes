@@ -2,11 +2,12 @@ import assert from 'assert'
 import getIconForExtension from '../src/index'
 import icons from '../src/icons'
 
-/* Testing every single extension would be madness, 
- * this is mainly to smoke test the function.
+/* 
+ * Just some smoke testing, going through every single extension would be madness.
  */
 
 describe('icons', () => {
+
     it('returns_an_object_with_all_icons', () => {
         assert.equal(Object.keys(icons).length, 10)
     })
