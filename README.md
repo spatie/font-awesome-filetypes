@@ -8,7 +8,7 @@ Helper to retrieve the Font Awesome icon for a specific file extension.
 ## Installation
 
 ```bash
-npm install font-awesome-filtypes
+npm install font-awesome-filetypes
 ```
 
 ## Usage
