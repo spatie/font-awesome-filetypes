@@ -15,10 +15,10 @@ npm install font-awesome-filtypes
 ### Basic Example
 
 ```es6
-import getIconForExtension from 'font-awesome-filtypes'
+import getIconForExtension from 'font-awesome-filetypes'
 
-let filename = foobar.jpg
-let extension = foobar.split('.').pop()
+let filename = 'foobar.jpg'
+let extension = filename.split('.').pop()
 
 let icon = `<i class="fa ${getIconForExtension(extension)}"></i>`
 
@@ -37,3 +37,6 @@ npm run test
 
 Spatie is a webdesign agency in Antwerp, Belgium. You'll find an overview of all our open source projects [on our website](https://spatie.be/opensource).
 
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
