@@ -5,8 +5,8 @@ import icons from './icons'
  * @param {string} extension
  * @returns {string}
  */
-function getIconForExtension(extension) {
+function getClassNameForExtension(extension) {
     return extensions[extension.toLowerCase()] || icons.file
 }
 
-export default getIconForExtension
+export default getClassNameForExtension
