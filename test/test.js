@@ -1,5 +1,5 @@
 import { assert } from 'chai'
-import { getClassNameForExtension, getIconForExtension } from '../src/index'
+import { getClassNameForExtension, getIconForExtension } from '../src/index'
 import icons from '../src/icons'
 
 describe('icons', () => {
@@ -42,6 +42,7 @@ describe('get_class_name_for_extension', () => {
 })
 
 describe('get_icon_for_extension', () => {
+    
     it('returns_the_correct_icon_for_an_extension', () => {
         assert.equal('<i class="fa fa-file-image-o"></i>', getIconForExtension('jpg'))
     })
