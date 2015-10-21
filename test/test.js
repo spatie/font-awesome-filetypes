@@ -1,6 +1,8 @@
 import { assert } from 'chai'
-import getClassNameForExtension from '../src/index'
+import { getClassNameForExtension, getIconForExtension } from '../src/index'
 import icons from '../src/icons'
+
+console.log(getClassNameForExtension);
 
 describe('icons', () => {
 
@@ -9,7 +11,7 @@ describe('icons', () => {
     })
 })
 
-describe('get_icon_for_extension', () => {
+describe('get_class_name_for_extension', () => {
 
     it('returns_a_default_file_icon', () => {
         assert.equal('fa-file-o', getClassNameForExtension('randomExtension'))
@@ -19,7 +21,7 @@ describe('get_icon_for_extension', () => {
         assert.equal('fa-file-image-o', getClassNameForExtension('JPG'))
     })
 
-    it('returns_the_correct_icon_for_an_extension', () => {
+    it('returns_the_correct_class_name_for_an_extension', () => {
         /* 
          * Just some smoke testing, going through every single extension would be madness.
          */
@@ -38,5 +40,11 @@ describe('get_icon_for_extension', () => {
         Object.keys(testCases).map(extension => {
             assert.equal(testCases[extension], getClassNameForExtension(extension))
         })
+    })
+})
+
+describe('get_icon_for_extension', () => {
+    it('returns_the_correct_icon_for_an_extension', () => {
+        assert.equal('<i class="fa fa-file-image-o"></i>', getIconForExtension('jpg'))
     })
 })
