@@ -2,8 +2,6 @@ import { assert } from 'chai'
 import { getClassNameForExtension, getIconForExtension } from '../src/index'
 import icons from '../src/icons'
 
-console.log(getClassNameForExtension);
-
 describe('icons', () => {
 
     it('returns_an_object_with_all_icons', () => {
