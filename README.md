@@ -20,10 +20,10 @@ By default, the module exports the function to retrieve an icon's class name:
 ```es6
 import getClassNameForExtension from 'font-awesome-filetypes'
 
-let filename = 'foobar.jpg'
-let extension = filename.split('.').pop()
+const filename = 'foobar.jpg'
+const extension = filename.split('.').pop()
 
-let className = getClassNameForExtension(extension)
+const className = getClassNameForExtension(extension)
 
 // className = 'fa-file-image-o'
 ```
@@ -39,10 +39,10 @@ Ths module also exposes a function to retrieve an html string of the icon (as pe
 ```es6
 import { getIconForExtension } from 'font-awesome-filetypes'
 
-let filename = 'foobar.jpg'
-let extension = filename.split('.').pop()
+const filename = 'foobar.jpg'
+const extension = filename.split('.').pop()
 
-let icon = getIconNameForExtension(extension)
+const icon = getIconForExtension(extension)
 
 // icon = '<i class="fa fa-file-image-o"></i>'
 ```
