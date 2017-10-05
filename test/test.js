@@ -32,6 +32,7 @@ describe('get_class_name_for_extension', () => {
             mp3: 'fa-file-audio-o',
             mp4: 'fa-file-video-o',
             zip: 'fa-file-zip-o',
+            txt: 'fa-file-text-o',
             js: 'fa-file-code-o'
         }
 
