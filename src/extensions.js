@@ -33,6 +33,8 @@ const extensions = {
     html: icons.code,
     js: icons.code,
 
+    txt: icons.text,
+
     file: icons.file
 }
 

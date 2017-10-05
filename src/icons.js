@@ -8,6 +8,7 @@ const icons = {
     video: 'fa-file-video-o',
     zip: 'fa-file-zip-o',
     code: 'fa-file-code-o',
+    text: 'fa-file-text-o',
     file: 'fa-file-o'
 }
 
