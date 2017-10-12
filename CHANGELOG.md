@@ -2,11 +2,14 @@
 
 All Notable changes to `font-awesome-filetypes` will be documented in this file.
 
+## 1.2.0
+- Added `getExtensionForFilename`, `getClassNameForFilename` & `getIconForFilename` functions
+
 ## 1.1.0
-- Add icons for `txt` files
+- Added icons for `txt` files
 
 ## 1.0.1
-- Bugfix: npmignore was ignoring the wrong directory
+- Fixed npmignore issue
 
 ## 1.0.0
 - Initial release
