@@ -3,13 +3,15 @@
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 [![Build Status](https://img.shields.io/travis/spatie/font-awesome-filetypes.svg?style=flat-square)](https://travis-ci.org/spatie/font-awesome-filetypes)
 
-Helper to retrieve the Font Awesome icon for a specific file extension.
+Helper to retrieve the Font Awesome 5 icon for a specific file extension.
 
 ## Installation
 
 ```bash
 npm install font-awesome-filetypes
 ```
+
+> For Font Awesome 4, install v1 of this package
 
 ## Usage
 
@@ -102,7 +104,7 @@ We publish all received postcards [on our company website](https://spatie.be/en/
 
 Spatie is a webdesign agency based in Antwerp, Belgium. You'll find an overview of all our open source projects [on our website](https://spatie.be/opensource).
 
-Does your business depend on our contributions? Reach out and support us on [Patreon](https://www.patreon.com/spatie). 
+Does your business depend on our contributions? Reach out and support us on [Patreon](https://www.patreon.com/spatie).
 All pledges will be dedicated to allocating workforce on maintenance and new awesome stuff.
 
 ## License

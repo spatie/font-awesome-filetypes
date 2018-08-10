@@ -2,6 +2,9 @@
 
 All Notable changes to `font-awesome-filetypes` will be documented in this file.
 
+## 2.0.0
+- Font Awesome 5 icons
+
 ## 1.2.0
 - Added `getExtensionForFilename`, `getClassNameForFilename` & `getIconForFilename` functions
 
