@@ -2,6 +2,9 @@
 
 All Notable changes to `font-awesome-filetypes` will be documented in this file.
 
+## 2.0.1
+- Fix archive file icons
+
 ## 2.0.0
 - Font Awesome 5 icons
 
