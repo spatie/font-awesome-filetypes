@@ -6,7 +6,7 @@ const icons = {
     excel: 'fa-file-excel',
     audio: 'fa-file-audio',
     video: 'fa-file-video',
-    zip: 'fa-file-zip',
+    zip: 'fa-file-archive',
     code: 'fa-file-code',
     text: 'fa-file-alt',
     file: 'fa-file'

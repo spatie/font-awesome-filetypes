@@ -37,7 +37,7 @@ describe('get_class_name_for_extension', () => {
             xls: 'fa-file-excel',
             mp3: 'fa-file-audio',
             mp4: 'fa-file-video',
-            zip: 'fa-file-zip',
+            zip: 'fa-file-archive',
             txt: 'fa-file-alt',
             js: 'fa-file-code'
         }
