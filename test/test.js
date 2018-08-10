@@ -18,28 +18,28 @@ describe('icons', () => {
 describe('get_class_name_for_extension', () => {
 
     it('returns_a_default_file_icon', () => {
-        assert.equal('fa-file-o', getClassNameForExtension('randomExtension'))
+        assert.equal('fa-file', getClassNameForExtension('randomExtension'))
     })
 
     it('can_handle_other_cases', () => {
-        assert.equal('fa-file-image-o', getClassNameForExtension('JPG'))
+        assert.equal('fa-file-image', getClassNameForExtension('JPG'))
     })
 
     it('returns_the_correct_class_name_for_an_extension', () => {
-        /* 
+        /*
          * Just some smoke testing, going through every single extension would be madness.
          */
         let testCases = {
-            jpg: 'fa-file-image-o',
-            pdf: 'fa-file-pdf-o',
-            doc: 'fa-file-word-o',
-            ppt: 'fa-file-powerpoint-o',
-            xls: 'fa-file-excel-o',
-            mp3: 'fa-file-audio-o',
-            mp4: 'fa-file-video-o',
-            zip: 'fa-file-zip-o',
-            txt: 'fa-file-text-o',
-            js: 'fa-file-code-o'
+            jpg: 'fa-file-image',
+            pdf: 'fa-file-pdf',
+            doc: 'fa-file-word',
+            ppt: 'fa-file-powerpoint',
+            xls: 'fa-file-excel',
+            mp3: 'fa-file-audio',
+            mp4: 'fa-file-video',
+            zip: 'fa-file-zip',
+            txt: 'fa-file-alt',
+            js: 'fa-file-code'
         }
 
         Object.keys(testCases).map(extension => {
@@ -49,14 +49,14 @@ describe('get_class_name_for_extension', () => {
 })
 
 describe('get_icon_for_extension', () => {
-    
+
     it('returns_the_correct_icon_for_an_extension', () => {
-        assert.equal('<i class="fa fa-file-image-o"></i>', getIconForExtension('jpg'))
+        assert.equal('<i class="fa fa-file-image"></i>', getIconForExtension('jpg'))
     })
 })
 
 describe('get_extension_for_filename', () => {
-    
+
     it('returns_the_correct_extension_for_a_filename', () => {
         let testCases = {
             'picture.jpg': 'jpg',
@@ -72,28 +72,28 @@ describe('get_extension_for_filename', () => {
 describe('get_class_name_for_filename', () => {
 
     it('returns_a_default_file_icon', () => {
-        assert.equal('fa-file-o', getClassNameForFilename('file.randomExtension'))
-        assert.equal('fa-file-o', getClassNameForFilename('.htaccess'))
+        assert.equal('fa-file', getClassNameForFilename('file.randomExtension'))
+        assert.equal('fa-file', getClassNameForFilename('.htaccess'))
     })
 
     it('can_handle_other_cases', () => {
-        assert.equal('fa-file-image-o', getClassNameForFilename('image.JPG'))
+        assert.equal('fa-file-image', getClassNameForFilename('image.JPG'))
     })
 
     it('returns_the_correct_class_name_for_a_filename', () => {
-        /* 
+        /*
          * Just some smoke testing, going through every single filename would be madness.
          */
         let testCases = {
-            'image.jpg': 'fa-file-image-o',
-            'document.pdf': 'fa-file-pdf-o',
-            'document.doc': 'fa-file-word-o',
-            'presentation.ppt': 'fa-file-powerpoint-o',
-            'spreadsheet.xls': 'fa-file-excel-o',
-            'song.mp3': 'fa-file-audio-o',
-            'song.mp4': 'fa-file-video-o',
-            'archive.zip': 'fa-file-zip-o',
-            'script.js': 'fa-file-code-o'
+            'image.jpg': 'fa-file-image',
+            'document.pdf': 'fa-file-pdf',
+            'document.doc': 'fa-file-word',
+            'presentation.ppt': 'fa-file-powerpoint',
+            'spreadsheet.xls': 'fa-file-excel',
+            'song.mp3': 'fa-file-audio',
+            'song.mp4': 'fa-file-video',
+            'archive.zip': 'fa-file-zip',
+            'script.js': 'fa-file-code'
         }
 
         Object.keys(testCases).map(filename => {
@@ -103,8 +103,8 @@ describe('get_class_name_for_filename', () => {
 })
 
 describe('get_icon_for_filename', () => {
-    
+
     it('returns_the_correct_icon_for_a_filename', () => {
-        assert.equal('<i class="fa fa-file-image-o"></i>', getIconForFilename('image.jpg'))
+        assert.equal('<i class="fa fa-file-image"></i>', getIconForFilename('image.jpg'))
     })
 })
