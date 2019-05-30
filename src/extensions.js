@@ -26,8 +26,8 @@ const extensions = {
     mkv: icons.video,
     mp4: icons.video,
 
-    gz: icons.zip,
-    zip: icons.zip,
+    gz: icons.archive,
+    zip: icons.archive,
 
     css: icons.code,
     html: icons.code,
