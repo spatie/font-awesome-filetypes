@@ -4,7 +4,8 @@ import {
     getIconForExtension,
     getExtensionForFilename,
     getClassNameForFilename,
-    getIconForFilename
+    getIconForFilename,
+    getClassNameForMimetype, getIconForMimetype
 } from '../src/index'
 import icons from '../src/icons'
 
@@ -118,5 +119,61 @@ describe('get_icon_for_filename', () => {
 
     it('returns_the_correct_icon_for_a_filename', () => {
         assert.equal('<i class="fa fa-file-image"></i>', getIconForFilename('image.jpg'))
+    })
+})
+
+describe('get_class_name_for_mimetype', () => {
+
+    it('returns_a_default_file_icon', () => {
+        assert.equal('fa-file', getClassNameForMimetype('example/mimetype'))
+    })
+
+    it('can_handle_other_cases', () => {
+        assert.equal('fa-file-image', getClassNameForMimetype('IMAGE/jpeg'))
+    })
+
+    it('returns_the_correct_class_name_for_a_mimetype', () => {
+        let testCases = {
+            'image/gif': 'fa-file-image',
+            'image/jpeg': 'fa-file-image',
+            'image/png': 'fa-file-image',
+            'application/pdf': 'fa-file-pdf',
+            'application/msword': 'fa-file-word',
+            'application/vnd.openxmlformats-officedocument.wordprocessingml.document': 'fa-file-word',
+            'application/mspowerpoint': 'fa-file-powerpoint',
+            'application/vnd.openxmlformats-officedocument.presentationml.presentation': 'fa-file-powerpoint',
+            'application/msexcel': 'fa-file-excel',
+            'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet': 'fa-file-excel',
+            'audio/aac': 'fa-file-audio',
+            'audio/wav': 'fa-file-audio',
+            'audio/mpeg': 'fa-file-audio',
+            'audio/mp4': 'fa-file-audio',
+            'audio/ogg': 'fa-file-audio',
+            'video/x-msvideo': 'fa-file-video',
+            'video/mpeg': 'fa-file-video',
+            'video/ogg': 'fa-file-video',
+            'video/quicktime': 'fa-file-video',
+            'video/webm': 'fa-file-video',
+            'application/gzip': 'fa-file-archive',
+            'application/zip': 'fa-file-archive',
+            'text/css': 'fa-file-code',
+            'text/html': 'fa-file-code',
+            'text/javascript': 'fa-file-code',
+            'application/javascript': 'fa-file-code',
+            'text/plain': 'fa-file-alt',
+            'text/richtext': 'fa-file-alt',
+            'text/rtf': 'fa-file-alt'
+        }
+
+        Object.keys(testCases).map(mimetype => {
+            assert.equal(testCases[mimetype], getClassNameForMimetype(mimetype))
+        })
+    })
+})
+
+describe('get_icon_for_mimetype', () => {
+
+    it('returns_the_correct_icon_for_a_mimetype', () => {
+        assert.equal('<i class="fa fa-file-image"></i>', getIconForMimetype('image/jpeg'))
     })
 })
