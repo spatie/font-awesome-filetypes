@@ -5,7 +5,8 @@ import {
     getExtensionForFilename,
     getClassNameForFilename,
     getIconForFilename,
-    getClassNameForMimetype, getIconForMimetype
+    getClassNameForMimetype,
+    getIconForMimetype
 } from '../src/index'
 import icons from '../src/icons'
 
