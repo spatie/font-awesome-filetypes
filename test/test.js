@@ -27,20 +27,31 @@ describe('get_class_name_for_extension', () => {
     })
 
     it('returns_the_correct_class_name_for_an_extension', () => {
-        /*
-         * Just some smoke testing, going through every single extension would be madness.
-         */
         let testCases = {
+            gif: 'fa-file-image',
+            jpeg: 'fa-file-image',
             jpg: 'fa-file-image',
+            png: 'fa-file-image',
             pdf: 'fa-file-pdf',
             doc: 'fa-file-word',
+            docx: 'fa-file-word',
             ppt: 'fa-file-powerpoint',
+            pptx: 'fa-file-powerpoint',
             xls: 'fa-file-excel',
+            xlsx: 'fa-file-excel',
+            aac: 'fa-file-audio',
             mp3: 'fa-file-audio',
+            ogg: 'fa-file-audio',
+            avi: 'fa-file-video',
+            flv: 'fa-file-video',
+            mkv: 'fa-file-video',
             mp4: 'fa-file-video',
+            gz: 'fa-file-archive',
             zip: 'fa-file-archive',
-            txt: 'fa-file-alt',
-            js: 'fa-file-code'
+            css: 'fa-file-code',
+            html: 'fa-file-code',
+            js: 'fa-file-code',
+            txt: 'fa-file-alt'
         }
 
         Object.keys(testCases).map(extension => {
