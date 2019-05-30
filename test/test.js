@@ -11,7 +11,8 @@ import icons from '../src/icons'
 describe('icons', () => {
 
     it('returns_an_object_with_all_icons', () => {
-        assert.isAbove(Object.keys(icons).length, 1)
+        assert.equal(Object.keys(icons).length, 11)
+        assert.equal(Object.values(icons).length, 11)
     })
 })
 
