@@ -33,9 +33,7 @@ const extensions = {
     html: icons.code,
     js: icons.code,
 
-    txt: icons.text,
-
-    file: icons.file
+    txt: icons.text
 }
 
 export default extensions
