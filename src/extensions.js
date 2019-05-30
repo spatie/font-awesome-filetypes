@@ -17,6 +17,8 @@ const extensions = {
     xls: icons.excel,
     xlsx: icons.excel,
 
+    csv: icons.csv,
+
     aac: icons.audio,
     mp3: icons.audio,
     ogg: icons.audio,

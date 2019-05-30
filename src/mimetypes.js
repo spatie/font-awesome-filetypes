@@ -16,6 +16,8 @@ const mimetypes = {
     'application/msexcel': icons.excel,
     'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet': icons.excel,
 
+    'text/csv': icons.csv,
+
     'audio/aac': icons.audio,
     'audio/wav': icons.audio,
     'audio/mpeg': icons.audio,

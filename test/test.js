@@ -13,8 +13,8 @@ import icons from '../src/icons'
 describe('icons', () => {
 
     it('returns_an_object_with_all_icons', () => {
-        assert.equal(Object.keys(icons).length, 11)
-        assert.equal(Object.values(icons).length, 11)
+        assert.equal(Object.keys(icons).length, 12)
+        assert.equal(Object.values(icons).length, 12)
     })
 })
 
@@ -41,6 +41,7 @@ describe('get_class_name_for_extension', () => {
             pptx: 'fa-file-powerpoint',
             xls: 'fa-file-excel',
             xlsx: 'fa-file-excel',
+            csv: 'fa-file-csv',
             aac: 'fa-file-audio',
             mp3: 'fa-file-audio',
             ogg: 'fa-file-audio',
@@ -145,6 +146,7 @@ describe('get_class_name_for_mimetype', () => {
             'application/vnd.openxmlformats-officedocument.presentationml.presentation': 'fa-file-powerpoint',
             'application/msexcel': 'fa-file-excel',
             'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet': 'fa-file-excel',
+            'text/csv': 'fa-file-csv',
             'audio/aac': 'fa-file-audio',
             'audio/wav': 'fa-file-audio',
             'audio/mpeg': 'fa-file-audio',

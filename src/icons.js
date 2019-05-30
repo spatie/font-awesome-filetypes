@@ -4,6 +4,7 @@ const icons = {
     word: 'fa-file-word',
     powerpoint: 'fa-file-powerpoint',
     excel: 'fa-file-excel',
+    csv: 'fa-file-csv',
     audio: 'fa-file-audio',
     video: 'fa-file-video',
     archive: 'fa-file-archive',
