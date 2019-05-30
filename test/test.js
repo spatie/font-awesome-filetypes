@@ -104,7 +104,7 @@ describe('get_class_name_for_filename', () => {
             'spreadsheet.xls': 'fa-file-excel',
             'song.mp3': 'fa-file-audio',
             'song.mp4': 'fa-file-video',
-            'archive.zip': 'fa-file-zip',
+            'archive.zip': 'fa-file-archive',
             'script.js': 'fa-file-code'
         }
 
