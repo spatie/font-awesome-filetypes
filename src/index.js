@@ -1,5 +1,5 @@
 import extensions from './extensions'
-import mimetypes from './mimetypes'
+import mimeTypes from './mimetypes'
 import icons from './icons'
 
 /**
@@ -43,19 +43,19 @@ export function getIconForFilename(filename) {
 }
 
 /**
- * @param {string} mimetype
+ * @param {string} mimeType
  * @returns {string}
  */
-export function getClassNameForMimetype(mimetype) {
-    return mimetypes[mimetype.toLowerCase()] || icons.file
+export function getClassNameForMimeType(mimeType) {
+    return mimeTypes[mimeType.toLowerCase()] || icons.file
 }
 
 /**
- * @param {string} mimetype
+ * @param {string} mimeType
  * @returns {string}
  */
-export function getIconForMimetype(mimetype) {
-    return `<i class="fa ${getClassNameForMimetype(mimetype)}"></i>`
+export function getIconForMimeType(mimeType) {
+    return `<i class="fa ${getClassNameForMimeType(mimeType)}"></i>`
 }
 
 export default getClassNameForExtension

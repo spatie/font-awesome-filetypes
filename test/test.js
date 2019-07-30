@@ -5,8 +5,8 @@ import {
     getExtensionForFilename,
     getClassNameForFilename,
     getIconForFilename,
-    getClassNameForMimetype,
-    getIconForMimetype
+    getClassNameForMimeType,
+    getIconForMimeType
 } from '../src/index'
 import icons from '../src/icons'
 
@@ -124,17 +124,17 @@ describe('get_icon_for_filename', () => {
     })
 })
 
-describe('get_class_name_for_mimetype', () => {
+describe('get_class_name_for_mimeType', () => {
 
     it('returns_a_default_file_icon', () => {
-        assert.equal('fa-file', getClassNameForMimetype('example/mimetype'))
+        assert.equal('fa-file', getClassNameForMimeType('example/mimeType'))
     })
 
     it('can_handle_other_cases', () => {
-        assert.equal('fa-file-image', getClassNameForMimetype('IMAGE/jpeg'))
+        assert.equal('fa-file-image', getClassNameForMimeType('IMAGE/jpeg'))
     })
 
-    it('returns_the_correct_class_name_for_a_mimetype', () => {
+    it('returns_the_correct_class_name_for_a_mimeType', () => {
         let testCases = {
             'image/gif': 'fa-file-image',
             'image/jpeg': 'fa-file-image',
@@ -168,15 +168,15 @@ describe('get_class_name_for_mimetype', () => {
             'text/rtf': 'fa-file-alt'
         }
 
-        Object.keys(testCases).map(mimetype => {
-            assert.equal(testCases[mimetype], getClassNameForMimetype(mimetype))
+        Object.keys(testCases).map(mimeType => {
+            assert.equal(testCases[mimeType], getClassNameForMimeType(mimeType))
         })
     })
 })
 
-describe('get_icon_for_mimetype', () => {
+describe('get_icon_for_mimeType', () => {
 
-    it('returns_the_correct_icon_for_a_mimetype', () => {
-        assert.equal('<i class="fa fa-file-image"></i>', getIconForMimetype('image/jpeg'))
+    it('returns_the_correct_icon_for_a_mimeType', () => {
+        assert.equal('<i class="fa fa-file-image"></i>', getIconForMimeType('image/jpeg'))
     })
 })

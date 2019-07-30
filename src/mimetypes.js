@@ -1,6 +1,6 @@
 import icons from './icons'
 
-const mimetypes = {
+const mimeTypes = {
     'image/gif': icons.image,
     'image/jpeg': icons.image,
     'image/png': icons.image,
@@ -44,4 +44,4 @@ const mimetypes = {
     'text/rtf': icons.text
 }
 
-export default mimetypes
+export default mimeTypes
