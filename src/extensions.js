@@ -17,6 +17,8 @@ const extensions = {
     xls: icons.excel,
     xlsx: icons.excel,
 
+    csv: icons.csv,
+
     aac: icons.audio,
     mp3: icons.audio,
     ogg: icons.audio,
@@ -26,16 +28,14 @@ const extensions = {
     mkv: icons.video,
     mp4: icons.video,
 
-    gz: icons.zip,
-    zip: icons.zip,
+    gz: icons.archive,
+    zip: icons.archive,
 
     css: icons.code,
     html: icons.code,
     js: icons.code,
 
-    txt: icons.text,
-
-    file: icons.file
+    txt: icons.text
 }
 
 export default extensions

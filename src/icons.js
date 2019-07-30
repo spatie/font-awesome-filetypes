@@ -4,9 +4,10 @@ const icons = {
     word: 'fa-file-word',
     powerpoint: 'fa-file-powerpoint',
     excel: 'fa-file-excel',
+    csv: 'fa-file-csv',
     audio: 'fa-file-audio',
     video: 'fa-file-video',
-    zip: 'fa-file-archive',
+    archive: 'fa-file-archive',
     code: 'fa-file-code',
     text: 'fa-file-alt',
     file: 'fa-file'
